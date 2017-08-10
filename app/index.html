@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="css/style.css" />
 
 
-    <title>CVO Crescendo</title>
+    <title>Bookie</title>
 </head>
-<body ng-app="crescendo">
-    <div ui-view class="pageHeight"></div>
+<body ng-app="bookie">
 
-    <!-- add .min in front of .js for production!!
-        non minified is for more error explanations
-        -->
+    <!-- Header includes navigation bar, ng-include is used because of the static content -->
+    <div ng-include="header"></div>
+
+    <!-- ui-view is preferred over ng-include or ng-view because of the dynamic content -->
+    <div ui-view class="pageHeight"></div>
+    <div ng-include="footer"></div>
+
+
+
+    <!-- Angular recourse files via cdn -->
     <script src="https://use.fontawesome.com/2892ac09a3.js"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
@@ -29,15 +35,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!--
-<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
-    -->
-<script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript" src="js/controllers.js"></script>
-<script type="text/javascript" src="js/services.js"></script>
+    <!-- Application resource files -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
 
 </body>
 </html>
