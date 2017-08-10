@@ -1,0 +1,29 @@
+{
+  "name": "AngularBackBone",
+  "description": "A npm Back Bone for developing an AngularJS application",
+  "author": {
+    "name": "Nicolas Goris",
+    "email": "nicolas.goris@ap.be"
+  },
+  "keywords": [""],
+  "bugs": {
+    "email": "nicolas.goris@ap.be"
+  },
+  "license": "(Apache-2.0)",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/APUniversityCollege/AngularBackBone.git"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",	
+    "start": "lite-server -c ls-config.json",    
+    "update-index-async": "node -e \"var fs=require('fs'),indexFile='app/index-async.html',loaderFile='app/bower_components/angular-loader/angular-loader.min.js',loaderText=fs.readFileSync(loaderFile,'utf-8').split(/sourceMappingURL=angular-loader.min.js.map/).join('sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map'),indexText=fs.readFileSync(indexFile,'utf-8').split(/\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/).join('//@@NG_LOADER_START@@\\n'+loaderText+'    //@@NG_LOADER_END@@');fs.writeFileSync(indexFile,indexText);\""
+  },
+  "devDependencies": {
+    "bower": "^1.7.7",
+	"http-server": "^0.9.0",
+    "lite-server": "2.2.2"	
+  }
+}

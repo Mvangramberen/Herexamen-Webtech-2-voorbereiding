@@ -1,0 +1,27 @@
+{
+  "name": "AngularBackBone",
+  "description": "A npm Back Bone for developing an AngularJS application",
+  "author": {
+    "name": "Nicolas Goris",
+    "email": "nicolas.goris@ap.be"
+  },
+  "keywords": [""],
+  "bugs": {
+    "email": "nicolas.goris@ap.be"
+  },
+  "license": "(Apache-2.0)",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/APUniversityCollege/AngularBackBone.git"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "jquery": "2.2.4"
+  }
+}
