@@ -22,8 +22,23 @@ header ul {
 }
 
 header ul a {
-    display: inline-block;
+    display: block;
+    float: left;
     width: 25%;
     text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background: black;
+    border-right: 1px solid white;
 }
 
+header ul a:last-child {
+    border: none;
+}
+
+header ul a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
