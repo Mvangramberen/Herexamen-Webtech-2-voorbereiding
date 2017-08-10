@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
 
-   <!-- <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
 
     <title>Bookie</title>
 </head>
+
 <body ng-app="bookie">
 
+    <!-- Headers contains the navigation bar, using ng-include for static content -->
     <header ng-include="'templates/header.html'"></header>
+
+    <!-- It's preferred to use the 'ui.routing' dependancy for dynamic content -->
     <div ui-view></div>
     <footer ng-include="'templates/footer.html'"></footer>
 
-    <!-- add .min in front of .js for production!!
-        non minified is for more error explanations
-        -->
+    <!-- Angular resource files via CDN -->
     <script src="https://use.fontawesome.com/2892ac09a3.js"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
@@ -32,15 +33,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!--
-<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
-    -->
-<script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript" src="js/controllers.js"></script>
-<script type="text/javascript" src="js/services.js"></script>
+    <!-- Application resource files -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
 
 </body>
 </html>
