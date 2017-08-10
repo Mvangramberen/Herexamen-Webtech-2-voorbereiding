@@ -1,8 +1,8 @@
 // HIER INJECT JE ALL DEPENDENCIES TUSSEN [ ]
 // HIER SPECIFIEER JE DE ROUTING (al gebeurd)
 
-angular.module('crescendo', [
-    'crescendo.controllers',
+angular.module('bookie', [
+    'bookie.controllers',
     'ui.router',
     'ngResource',
     'ngStorage',

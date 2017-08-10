@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="css/style.css" />
 
 
-    <title>CVO Crescendo</title>
+    <title>Bookie</title>
 </head>
-<body ng-app="crescendo">
-    <div ui-view class="pageHeight"></div>
+<body ng-app="bookie">
+
+    <header ng-include="'templates/header.html'"></header>
+    <div ui-view></div>
+    <footer ng-include="'templates/footer.html'"></footer>
 
     <!-- add .min in front of .js for production!!
         non minified is for more error explanations
