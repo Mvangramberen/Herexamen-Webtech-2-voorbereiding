@@ -8,8 +8,12 @@ a, a:focus, a:hover, a:visited  {
     color: inherit;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    
     height: 50px;
     background-color: lightgray;
 }
@@ -57,7 +61,7 @@ footer {
 }
 
 #content {
-    width: 1200px;
+    max-width: 1200px;
     height: 800px;
     margin: 0 auto;
 }
@@ -92,4 +96,13 @@ footer {
 
 .even {
     margin-right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .categorie {
+        width: 60%;
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
 }

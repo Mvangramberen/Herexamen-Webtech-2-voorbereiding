@@ -14,10 +14,6 @@
 
     <!-- Headers contains the navigation bar, using ng-include for static content -->
     <header ng-include="'templates/header.html'"></header>
-    <div ui-view></div>
-    <footer ng-include="'templates/footer.html'"></footer>
-
-    <!-- It's preferred to use the 'ui.routing' dependancy for dynamic content -->
     <div ui-view id="content"></div>
     <footer ng-include="'templates/footer.html'"></footer>
 
