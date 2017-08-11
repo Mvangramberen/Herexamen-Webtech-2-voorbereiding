@@ -1,3 +1,13 @@
+body {
+    background-color: lightgray;
+    color: white;
+}
+
+a, a:focus, a:hover, a:visited  {
+    text-decoration: none;
+    color: inherit;
+}
+
 header {
     
     height: 50px;
@@ -28,11 +38,12 @@ header ul a:last-child {
     border: none;
 }
 
-header ul a:hover {
+header ul a:hover{
     background-color: white;
     color: black;
     text-decoration: none;
 }
+
 
 footer {
     background-color: black;
@@ -41,8 +52,44 @@ footer {
     color: white;
     text-align: center;
     line-height: 50px;
+    position: absolute;
+    bottom: 0;
 }
 
 #content {
+    width: 1200px;
     height: 800px;
+    margin: 0 auto;
+}
+
+.categorie {
+    height: 200px;
+    width: 49%;
+    background-color: black;
+    color: white;
+    float: left;
+    margin: 2% 2% 0 0;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+}
+
+.categorie:hover {
+    background: white;
+    border: 2px solid black;
+    color: black;
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+.even:hover {
+    box-shadow: 10px 10px 5px #888888
+}
+
+.odd:hover {
+    box-shadow: -10px 10px 5px #888888
+}
+
+.even {
+    margin-right: 0;
 }
