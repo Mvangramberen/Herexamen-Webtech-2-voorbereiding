@@ -11,8 +11,7 @@ body {
 
 a, a:focus, a:hover, a:visited  {
     text-decoration: none;
-    color: inherit;
-}
+    color: inherit;}
 
 p {
     margin: 0;
@@ -65,9 +64,8 @@ header table tr td.info{
     width:100px;
     position:absolute;
     text-align: center;
-    opacity: 0.7;
     margin:0;
-    padding:0;
+    padding:0;  
     width:200px;
     display: block;
     height:60px;
@@ -79,9 +77,10 @@ header table tr td.info{
 header p.bookText{
     padding-top:10px;
     background-color: #F86D15;
+    color:#8C3D0C;
     height:100%;
     font-size:200%;
-        border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     }
 
@@ -123,7 +122,7 @@ footer {
     border: 2px solid black;
     color: black;
     transition: all 200ms ease-in;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .even:hover {
