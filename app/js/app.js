@@ -20,10 +20,9 @@ angular.module('bookie', [
                 controller: 'CategorieCtrl'
             })
 
-            .state('app', {
-                url: '/app',
-                abstract: true,
-                templateUrl: 'templates/navigation.html',
-                controller: 'AppCtrl'
+            .state('categoriedetails', {
+                url: '/categoriedetails',
+                templateUrl: 'templates/categoriedetails.html',
+                controller: 'CategoriedetailsCtrl'
             })
     });

@@ -1,3 +1,9 @@
+/*
+******************
+ALGEMEEN
+******************
+*/
+
 body {
     background-color: lightgray;
     color: white;
@@ -12,6 +18,13 @@ p {
     margin: 0;
     padding: 0;
 }
+
+
+/*
+******************
+CATEGORIE HOME
+******************
+*/
 
 header {
     height: 50px;
@@ -105,4 +118,16 @@ footer {
         margin: 0 auto;
         margin-top: 10px;
     }
+}
+
+/*
+******************
+DETAILS
+******************
+*/
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-top: 40px;
 }
