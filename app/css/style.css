@@ -31,11 +31,7 @@ header {
     width:80px;
     left:0;
     position: absolute;
-    background: #191927;
-    
-
-    height: 50px;
-    background-color: lightgray;
+    background-color: #191927;
 }
 
 header table {
@@ -74,13 +70,7 @@ header p.bookText{
     opacity: 0.7;
     margin:0;
     padding:0;
-    width:100%;
-
-header ul a:hover{
-    background-color: white;
-    color: black;
-    text-decoration: none;
-}
+    width:100%;}
 
 
 footer {
@@ -95,16 +85,12 @@ footer {
 }
 
 #content {
-    background-color:blue;
-
-    position: absolute;
+    position: relative;
     bottom: 0;
-}
-
-#content {
-    max-width: 1200px;
-    height: 800px;
-    margin: 0 auto;
+    margin-left: 150px;
+    max-width: 1800px;
+    width:1500px;
+    z-index:-1;
 }
 
 .categorie {
