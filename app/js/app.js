@@ -11,19 +11,18 @@ angular.module('bookie', [
 
     .config(function($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('/login');
+        $urlRouterProvider.otherwise('/categorie');
 
         $stateProvider
-            .state('login', {
-                url: '/login',
-                templateUrl: 'templates/login.html',
-                controller: 'LoginCtrl'
+            .state('categorie', {
+                url: '/categorie',
+                templateUrl: 'templates/categorie.html',
+                controller: 'CategorieCtrl'
             })
 
-            .state('app', {
-                url: '/app',
-                abstract: true,
-                templateUrl: 'templates/navigation.html',
-                controller: 'AppCtrl'
+            .state('categoriedetails', {
+                url: '/categoriedetails',
+                templateUrl: 'templates/categoriedetails.html',
+                controller: 'CategoriedetailsCtrl'
             })
     });
