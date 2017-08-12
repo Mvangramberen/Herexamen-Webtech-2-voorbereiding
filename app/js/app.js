@@ -25,4 +25,9 @@ angular.module('bookie', [
                 templateUrl: 'templates/categoriedetails.html',
                 controller: 'CategoriedetailsCtrl'
             })
+            .state('mybooks', {
+                url: '/mybooks',
+                templateUrl: 'templates/mybooks.html',
+                controller: 'MybooksCtrl'
+            })
     });

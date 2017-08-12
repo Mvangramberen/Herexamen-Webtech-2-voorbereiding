@@ -28,3 +28,8 @@ angular.module('bookie.controllers', [])
       $scope.titel = $rootScope.categorieTitel;
       console.log($rootScope.categorieTitel)
     })
+
+    /* MY BOOKS CONTROLLER */
+    .controller("MybooksCtrl", function($scope, $state, $rootScope){
+      console.log("my books");
+    })

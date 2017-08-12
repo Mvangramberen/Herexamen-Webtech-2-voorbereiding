@@ -66,12 +66,16 @@ header table tr td.info{
     text-align: center;
     margin:0;
     padding:0;  
-    width:200px;
     display: block;
     height:60px;
     z-index: 0;
     margin-left:50px;
+            width:200px;
 
+}
+
+.ng-show{
+        width:200px;
 }
 
 header p.bookText{
