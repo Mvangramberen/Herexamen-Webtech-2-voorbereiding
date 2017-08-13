@@ -1,0 +1,10 @@
+<h1>Auteur: {{clickedAuteur}}<br> Boeken:</h1>
+
+ <div ng-repeat="boek in boeken">
+    <a><div class="categorie" ng-class-odd="'odd'" ng-class-even="'even'">{{boek}}</div></a>
+</div>
+
+<h3>Wie liked er deze auteur?:</h3>
+<div ng-repeat="likeName in likesNames">
+        <h5>{{likeName}}</h5>
+</div>

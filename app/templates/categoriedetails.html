@@ -1,1 +1,5 @@
 <h1>Categorie: {{titel}}</h1>
+
+ <div ng-repeat="auteur in specificAuteur | orderBy:'-likes'">
+    <a ui-sref="auteurdetails" ng-click="clicked(auteur)"><div class="categorie" ng-class-odd="'odd'" ng-class-even="'even'">{{auteur.auteur}} <i class="fa fa-heart" aria-hidden="true"></i> {{auteur.likes}}</div></a>
+</div>

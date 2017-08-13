@@ -25,4 +25,10 @@ angular.module('bookie', [
                 templateUrl: 'templates/categoriedetails.html',
                 controller: 'CategoriedetailsCtrl'
             })
+
+             .state('auteurdetails', {
+                url: '/auteurdetails',
+                templateUrl: 'templates/auteurdetails.html',
+                controller: 'AuteursdetailsCtrl'
+            })
     });
